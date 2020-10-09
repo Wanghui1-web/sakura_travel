@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+        function demoq(){
+            var flag=true;
+            return flag;
+        }function demoq1(){
+            var flag=true;
+            return flag;
+        }
+    $(function () {
+        $("#demo").submit(function () {
+
+            demoq()&&demoq1();
+            return false;
+
+        });
+
+    });
+
+
+    </script>
+</head>
+<body>
+<form name="demo" action="demo1" id="demo">
+    <input type="submit" style="border: 1px solid red">
+
+
+</form>
+</body>
+</html>
